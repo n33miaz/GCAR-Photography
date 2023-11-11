@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* estilização do botão */
+
+:root {
+    --primary: #15AAFF;
+}
+
+.botao__icon {
+    color: #15AAFF;
+    transition: color 1s ease-out;
+}
+
+.botao:hover {
+    animation: glow 2.5s infinite alternate;
+    text-shadow: 0 0 30px var(--primary);
+}
+
+.botao:hover .botao__icon {
+    color: var(--primary);
+}
+
+/* animação */
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 20px var(--primary);
+    }
+    100% {
+        box-sizing: 0 0 50px var(--primary);
+    }
+}
+
+/* estilização da galeria */
+
+.imagem {
+    transition: scale 350ms ease, opacity 350ms linear;
+}
+
+#galeria:has(img:hover) img:not(:hover) {
+    scale: .9;
+    opacity: .7;
+}

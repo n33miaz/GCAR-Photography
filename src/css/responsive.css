@@ -1,0 +1,21 @@
+@media (max-width: 926px) {
+    #img-perfil {
+        margin-top: 2rem;
+        width: 10rem;
+    }
+    #texto-perfil {
+        font-size: 22px;
+    }
+    #botoes {
+        height: 65px;
+        width: 225px;
+    }
+    #galeria {
+        column-count: 2;
+        margin: 3%;
+    }
+    .img {
+        margin: auto;
+        margin-bottom: 0.75rem;
+    }
+}
